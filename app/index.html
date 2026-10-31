@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JARVIS HUD</title>
+<meta http-equiv="refresh" content="0; url=http://192.168.0.204:8768/">
+<style>
+html,body{margin:0;width:100%;height:100%;background:#05080a;color:#4fd8ff;
+font-family:Arial,Helvetica,sans-serif;overflow:hidden;}
+.c{position:absolute;top:50%;left:50%;margin:-20px 0 0 -160px;width:320px;
+text-align:center;font-size:20px;letter-spacing:3px;}
+.c small{display:block;margin-top:10px;font-size:13px;color:#7ba4ae;letter-spacing:2px;}
+</style>
+</head>
+<body>
+<div class="c">JARVIS HUD<small>verbinden met jarvis-body…</small></div>
+<script>
+/* http -> http redirect (TizenBrew serves this from 127.0.0.1:8081, so no
+   mixed-content). The live HUD + its SSE/stats run same-origin on jarvis-body. */
+(function(){ try { window.location.replace('http://192.168.0.204:8768/'); }
+catch(e){ window.location.href='http://192.168.0.204:8768/'; } }());
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "jarvis-hud-tizenbrew",
+  "version": "1.0.0",
+  "description": "JARVIS HUD as a TizenBrew app tile - opens the live HUD served by jarvis-body.",
+  "packageType": "app",
+  "appName": "JARVIS HUD",
+  "appPath": "app/index.html",
+  "keys": []
+}
